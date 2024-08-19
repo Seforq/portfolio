@@ -121,43 +121,51 @@ body {
   .butt {
 
 
-  height: 48px;
-  align-items: center;
-  flex-direction: row;
-  display: flex;
-  justify-content: right;
+    height: 48px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: right;
 
 
-  .logo {
-    margin: 3%;
-    font-family: SFProText-Bold, sans-serif;
-    font-weight: bolder;
-    width: 50%;
+    .logo {
+      margin: 3%;
+      font-family: SFProText-Bold, sans-serif;
+      font-weight: bolder;
+      width: 100%;
 
-  }
+    }
 
-  .menu {
-    margin: 4%;
-    transition: 1s;
+    .dropcheck {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      align-items: center;
+      width: 100%;
 
-  }
+      .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-  .menu a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-family: SFProText-Light, sans-serif;
-    font-weight: lighter;
 
-  }
+      }
 
-  .menu a:hover {
-    color: #4687ee;
-  }
+      .menu a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        font-family: SFProText-Light, sans-serif;
+        font-weight: lighter;
+        margin: 20%;
 
-  .menu:hover {
-    transform: scale(1.1);
-  }
+      }
+
+      .menu a:hover {
+        color: #4687ee;
+      }
+    }
   }
 }
 
@@ -313,6 +321,7 @@ main {
 
 
       }
+
       .up-img {
         margin: 3%;
         width: 25%;
@@ -324,11 +333,11 @@ main {
       }
 
     }
+
     .block2 {
       display: flex;
       justify-content: center;
       flex-direction: row;
-
 
 
       .text2 {
@@ -356,42 +365,147 @@ main {
 
 @media (max-width: 500px) {
   .hed {
-    width: 30%;
 
-  .butt {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: start;
-    justify-content: start;
-    width: auto;
-    margin: 5%;
+    .butt {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      align-items: unset;
+      justify-content: start;
+      width: 100%;
 
 
-    .logo {
-      width: auto;
-      cursor: pointer;
-      background-color: #4687ee;
-      padding: 15%;
+      .logo {
+        width: 100%;
+        display: flex;
+        cursor: pointer;
+        background-color: #4687ee;
+        margin: 0;
+        padding: 5%;
+      }
+
+
+      .dropcheck {
+        display: none;
+        opacity: 0;
+        line-height: 2;
+        transition: transform 1.4s, opacity 1.5s;
+
+
+      }
+
+      .menu {
+        display: flex;
+        margin: 0;
+        align-items: start;
+        justify-content: left;
+        flex-direction: column;
+
+      }
+
+      .menu a {
+        margin: 5%;
+
+
+      }
+
+      .dropcheck.active {
+        display: flex;
+        opacity: 1;
+      }
+
+      .logo:hover {
+        background-color: #ff0000 !important;
+        color: #ffc200;
+      }
+
     }
 
-
-    .menu {
-      display: none;
-      margin: 15%;
-
-    }
-
-    .menu a {
-
-
-    }
   }
 
-  }
-  .butt:hover .menu {
-    display: block;
+  main {
+    .section1 {
+      margin: 3%;
+      flex-direction: column;
 
+      .main-text {
+        width: 100%;
+      }
+
+      .main-photo {
+        width: 250px;
+        height: 250px;
+        margin: 8%;
+
+      }
+
+      .main-text {
+        padding: 0;
+      }
+      .main-text p {
+        font-size: 1.4em;
+      }
+
+      .text-down p{
+
+        font-size: 1.1em;
+        width: 100%;
+      }
+
+    }
+
+    #section2 {
+      .block1 {
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+        .text1 {
+          width: 100%;
+          font-size: 1em;
+          margin: 3%;
+
+
+        }
+
+        .up-img {
+          margin: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+
+      }
+      hr {
+        width: 100%;
+        border: 1px solid black;
+      }
+
+      .block2 {
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+
+        .text2 {
+          width: 100%;
+          font-size: 1em;
+          margin: 3%;
+        }
+
+        .up-img1 {
+          margin: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
   }
 
 }
