@@ -299,6 +299,9 @@ main #section2 .block2 .up-img1 img {
 }
 
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   .hed .butt {
     display: flex;
     flex-direction: column;
@@ -343,9 +346,6 @@ main #section2 .block2 .up-img1 img {
     margin: 3%;
     flex-direction: column;
   }
-  main .section1 .main-text {
-    width: 100%;
-  }
   main .section1 .main-photo {
     width: 250px;
     height: 250px;
@@ -357,9 +357,12 @@ main #section2 .block2 .up-img1 img {
   main .section1 .main-text p {
     font-size: 1.4em;
   }
+  main .section1 .text-down {
+    width: 99%;
+  }
   main .section1 .text-down p {
     font-size: 1.1em;
-    width: 100%;
+    width: 99%;
   }
   main #section2 .block1 {
     margin: 5%;

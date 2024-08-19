@@ -364,6 +364,10 @@ main {
 
 
 @media (max-width: 500px) {
+
+  body {
+    overflow-x: hidden;
+  }
   .hed {
 
     .butt {
@@ -428,9 +432,7 @@ main {
       margin: 3%;
       flex-direction: column;
 
-      .main-text {
-        width: 100%;
-      }
+
 
       .main-photo {
         width: 250px;
@@ -446,10 +448,14 @@ main {
         font-size: 1.4em;
       }
 
+      .text-down {
+        width: 99%;
+      }
+
       .text-down p{
 
         font-size: 1.1em;
-        width: 100%;
+        width: 99%;
       }
 
     }
