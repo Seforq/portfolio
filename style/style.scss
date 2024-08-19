@@ -363,7 +363,7 @@ main {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 525px) {
 
   body {
     overflow-x: hidden;
@@ -429,7 +429,7 @@ main {
 
   main {
     .section1 {
-      margin: 3%;
+      display: flex;
       flex-direction: column;
 
 
@@ -443,6 +443,7 @@ main {
 
       .main-text {
         padding: 0;
+        margin: 3%;
       }
       .main-text p {
         font-size: 1.4em;

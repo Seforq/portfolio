@@ -298,7 +298,7 @@ main #section2 .block2 .up-img1 img {
   height: 200px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 525px) {
   body {
     overflow-x: hidden;
   }
@@ -343,7 +343,7 @@ main #section2 .block2 .up-img1 img {
     color: #ffc200;
   }
   main .section1 {
-    margin: 3%;
+    display: flex;
     flex-direction: column;
   }
   main .section1 .main-photo {
@@ -353,6 +353,7 @@ main #section2 .block2 .up-img1 img {
   }
   main .section1 .main-text {
     padding: 0;
+    margin: 3%;
   }
   main .section1 .main-text p {
     font-size: 1.4em;
